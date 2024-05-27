@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="WpfTvs.Pages.Elem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+             xmlns:local="clr-namespace:WpfTvs.Pages"
+             mc:Ignorable="d" 
+             >
+    <Button Padding="50" Margin="20,0" Width="250">
+        <StackPanel 
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center">
+            <Icon:PackIconMaterial 
+                Kind="Wifi" 
+                Width="50" Height="50"
+                HorizontalAlignment="Center"/>
+            <TextBlock 
+                Text="Network Setting"
+                FontSize="20"
+                Margin="0,30,0,0"/>
+        </StackPanel>
+    </Button>
+</UserControl>
