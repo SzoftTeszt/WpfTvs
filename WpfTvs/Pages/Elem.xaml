@@ -7,7 +7,44 @@
              xmlns:local="clr-namespace:WpfTvs.Pages"
              mc:Ignorable="d" 
              >
-    <Button Padding="50" Margin="20,0" Width="250">
+    <Button Padding="50" Margin="20,0" Width="250"
+            FocusVisualStyle="{x:Null}">
+        <Button.Style>
+            <Style TargetType="Button">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
+                            <GradientStop Color="#464f78"/>
+                            <GradientStop Color="#323f6c" Offset="0.9"/>
+                        </LinearGradientBrush>
+                    </Setter.Value>
+                </Setter>
+
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="Button">
+                            <Border 
+                                CornerRadius="5"
+                                Background="{TemplateBinding Background}">
+                                <ContentPresenter 
+                                    HorizontalAlignment="Center"
+                                    VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+                
+                
+                <Style.Triggers>
+                    <Trigger Property="IsMouseOver" Value="True">
+                        <Setter Property="Background" Value="#5f76f6"/>
+                        <Setter Property="Foreground" Value="#ffffff"/>
+                    </Trigger>
+                </Style.Triggers>
+            
+            </Style>
+        </Button.Style>
+        
         <StackPanel 
             VerticalAlignment="Center"
             HorizontalAlignment="Center">
