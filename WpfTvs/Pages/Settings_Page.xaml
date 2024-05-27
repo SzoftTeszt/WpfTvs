@@ -9,10 +9,10 @@
     <Grid Margin="20">
         <StackPanel Orientation="Horizontal"
                     HorizontalAlignment="Center">
-            <local:Elem/>
-            <local:Elem/>
-            <local:Elem/>
-            <local:Elem/>
+            <local:Elem Title="Network Setting" Kind="Wifi"/>
+            <local:Elem Title="Time Setting" Kind="Timelapse" />
+            <local:Elem Title="Common" Kind="Information"  />
+            <local:Elem Title="About Us" Kind="Wifi"/>
         </StackPanel>    
     </Grid>
 </UserControl>

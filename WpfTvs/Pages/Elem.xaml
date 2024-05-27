@@ -49,11 +49,12 @@
             VerticalAlignment="Center"
             HorizontalAlignment="Center">
             <Icon:PackIconMaterial 
-                Kind="Wifi" 
+                Kind="{Binding Kind}" 
                 Width="50" Height="50"
                 HorizontalAlignment="Center"/>
+        
             <TextBlock 
-                Text="Network Setting"
+                Text="{Binding Title}"
                 FontSize="20"
                 Margin="0,30,0,0"/>
         </StackPanel>

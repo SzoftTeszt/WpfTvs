@@ -20,9 +20,27 @@ namespace WpfTvs.Pages
     /// </summary>
     public partial class Elem : UserControl
     {
+
+        public string Title { 
+            get{return (string)GetValue(TitleProperty);} 
+            set { SetValue(TitleProperty, value); }
+        }
+        public static readonly DependencyProperty TitleProperty
+            = DependencyProperty.Register("Title", typeof(string), typeof(Elem) );
+     
+        public string Kind { 
+            get{return (string)GetValue(KindProperty);} 
+            set { SetValue(KindProperty, value); }
+        }
+        public static readonly DependencyProperty KindProperty
+            = DependencyProperty.Register("Kind", typeof(string), typeof(Elem) );
+   
         public Elem()
         {
+            
+            Kind = "Book";
             InitializeComponent();
+            this.DataContext = this;
         }
     }
 }
