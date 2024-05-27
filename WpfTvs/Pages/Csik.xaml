@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              MinWidth="300"
              >
-    <Border CornerRadius="5" Padding="20" Margin="0,5">
+    <Border CornerRadius="5" Padding="25" Margin="0,5">
         <Border.Style>
             <Style TargetType="Border">
                 <Setter Property="Background" Value="#374270"/>
@@ -18,7 +18,7 @@
                 </Style.Triggers>
             </Style>
         </Border.Style>
-        <Grid>
+        <Grid >
             <TextBlock
                 Foreground="White"
                 FontSize="22"
@@ -28,7 +28,7 @@
                 HorizontalAlignment="Right"
                 Foreground="White"
                 FontSize="22"
-                Margin="0,20,0,0"
+                Margin="0,0,20,0"
                 Text="{Binding RTitle}"
                 />
         </Grid>
