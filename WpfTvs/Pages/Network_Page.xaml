@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="WpfTvs.Pages.Network_Page"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfTvs.Pages"
+             mc:Ignorable="d" 
+             >
+    <StackPanel Orientation="Vertical" Margin="150,0">
+        <local:Csik LTitle="Enable Wifi"/>
+        <local:Csik LTitle="      Network SDN-1" RTitle="..."/>
+        <local:Csik LTitle="      Network SDN-2" RTitle="..."/>
+        <local:Csik LTitle="      Network SDN-3" RTitle="..."/>
+        <local:Csik LTitle="Enable Hotspot"/>
+        <local:Csik LTitle="Mac Address"/>
+    </StackPanel>
+</UserControl>

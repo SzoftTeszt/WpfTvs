@@ -7,7 +7,7 @@
         xmlns:local="clr-namespace:WpfTvs"
         xmlns:Pages="clr-namespace:WpfTvs.Pages"
         mc:Ignorable="d"
-        Title="MainWindow" Height="720" Width="1280">
+        Title="MainWindow" Height="800" Width="1280">
     <Border>
         <Border.Background>
             <LinearGradientBrush StartPoint="0.5,0" EndPoint="0.5,1">
@@ -50,7 +50,7 @@
         
             <ContentPresenter Grid.Row="2">
                 <ContentPresenter.Content>
-                    <Pages:Settings_Page/>
+                    <Pages:Network_Page/>
                 </ContentPresenter.Content>
             </ContentPresenter>
         </Grid>
